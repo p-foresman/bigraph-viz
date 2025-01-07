@@ -9,7 +9,8 @@ import pprint
 from typing import Any
 import copy
 
-from bigraph_schema.registry import type_schema_keys
+# NOTE: no longer exists
+# from bigraph_schema.registry import type_schema_keys
 
 pretty = pprint.PrettyPrinter(indent=2)
 
@@ -24,7 +25,7 @@ schema_keys = [
     '_depends_on',
     '_sync_step',
 ]
-schema_keys.extend(type_schema_keys)
+# schema_keys.extend(type_schema_keys)
 
 # TODO -- this should come from process-bigraph
 process_schema_keys = ['address', 'config', 'inputs', 'outputs', 'instance', 'interval']
