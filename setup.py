@@ -2,7 +2,7 @@ import re
 from setuptools import setup, find_packages
 
 
-VERSION = '0.0.35'
+VERSION = '0.1.5'
 
 
 with open("README.md", "r") as readme:
@@ -14,7 +14,7 @@ with open("README.md", "r") as readme:
         description)
     long_description = re.sub(
         r']\(([\w/.-]+)\)',
-        r'](https://github.com/vivarium-collective/bigraph-viz/blob/main/\1)',
+        r'](https://github.com/vivarium-collective/bigraph-viz/blob /main/\1)',
         description2)
 
 setup(
@@ -45,7 +45,7 @@ setup(
     install_requires=[
         # List your package dependencies here
         "graphviz",
-        "bigraph-schema",
+        "bigraph-schema>=0.0.51",
         "numpy"
     ],
 )
